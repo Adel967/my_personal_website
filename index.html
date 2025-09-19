@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .navbar {
+            background-color: rgb(60, 60, 60);
+            color:white;
+              overflow: hidden; /* keeps floats inside */
+
+        }
+
+
+
+        .items {
+            list-style: none;
+            display: inline-block;
+            position: absolute;
+            margin: 0;
+            right: 20px;
+            top: 15px;
+        }
+
+        .item {
+            display: inline;
+            margin-right: 20px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+              border-bottom: 2px solid transparent;
+
+        }
+
+        .item:hover {
+             color: goldenrod;
+              border-color: goldenrod;
+              cursor: pointer;
+        }
+
+        .active{
+             color: goldenrod;
+              border-color: goldenrod;
+              cursor: pointer;
+        }
+
+        
+
+        .logo {
+            display: inline;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .logo:hover {
+            color: goldenrod;
+            text-shadow: 0 0 15px goldenrod, 0 0 30px goldenrod;
+        }
+
+        .navbar {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom:10px ;
+        }
+
+
+
+
+        .content-img {
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid goldenrod;
+            box-shadow: 0 0 15px goldenrod;
+            transition: 1s;
+        }
+
+        .content-img:hover {
+            transform: scale(1.1);
+        }
+
+       .btn {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: goldenrod;
+        color: white;
+        transition: 0.5s;
+       }
+       
+       .btn-black {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+       }
+
+       .btn:hover {
+        background-color: transparent;
+        color: goldenrod;
+        border: 2px solid goldenrod;
+       }
+
+       .btn-black:hover {
+        background-color: transparent;
+        color: goldenrod;
+        border: 2px solid goldenrod;
+       }
+    
+
+       .header {
+        background-color: ghostwhite;
+        height: 100vh;
+       }
+
+       .info h1 {
+        margin: 0;
+        font-size: 3.5rem;
+       }
+
+       .info p {
+        font-size: 1.3rem;
+       }
+
+       .content {
+            display: flex;
+            align-items: center;
+            gap: 7em;
+            padding-left: 8%;
+            padding-right: 8%;
+            position: absolute;
+            top: 25%;
+           
+       }
+
+       .hobbies-info h2 {
+        font-size: 2rem;
+        color: #333;
+       }
+
+       .line {
+        width: 100px;
+        height: 4px;
+        background-color: goldenrod;
+        border-radius: 10px;
+        margin: 15px auto;
+       }
+
+       .hobby-list {
+        list-style: none;
+        color: #444;
+        margin: 1.2rem auto 0;
+       }
+
+       .hobby-list li {
+        font-size: 1.1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       }
+
+       .hobbies-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+       }
+
+       .center-text {
+        text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="logo"> <span style="color: goldenrod;">Adil</span>  Mohammed</h1>
+        <ul class="items">
+            <li class="item">Home</li>
+            <li class="item">Hobbies</li>
+            <li class="item">Skills</li>
+            <li class="item">Contact me</li>
+        </ul>
+    </div>
+
+    <header class="header">
+        <div class="content">
+            <div class="info">
+                <h1>Hi, I'm <span style="color: goldenrod;">Adil Mohammed</span> </h1>
+                <p>I'm a 15-year-old student who loves technology and creativity. I'm currently learning web development and enjoy building websites and exploring design ideas. I'm always curious and excited to learn new things!</p>
+                <div class="btn-box">
+                    <button class="btn-black">Contact Me</button>
+                    <button class="btn">View my skills</button>
+                </div>
+            </div>
+            <img src="assets/teenage.jpg" alt="photo of me" class="content-img">
+
+        </div>
+    </header>
+
+    <section class="hobbies-section">
+        <div class="hobbies-info">
+            <h2 class="center-text">My Hobbies</h2>
+            <div class="line"></div>
+            <ul class="hobby-list">
+                <li>
+                    <b>Coding:</b> I enjoy creating websites and small apps to improve my skills.
+                </li>
+                <li>
+                    <b>Reading:</b> I love reading books, especially about science and adventure.
+                </li>
+                <li>
+                    <b>Gaming:</b> I play games that challenge my brain and improve my thinking.
+                </li>
+                <li>
+                    <b>Drawing:</b> Sometimes I draw just for fun and to express creativity.
+                </li>
+            </ul>
+        </div>
+        <script
+            src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
+            type="module"
+            ></script>
+
+            <dotlottie-wc
+            src="https://lottie.host/8b8c4625-a594-48ea-b7a4-a33054eab702/0RvshLoJ4L.lottie"
+            style="width: 500px;height: 500px"
+            speed="1"
+            autoplay
+            loop
+            ></dotlottie-wc>
+    </section>
+</body>
+</html>
